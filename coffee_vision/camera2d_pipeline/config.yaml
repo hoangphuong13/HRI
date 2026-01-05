@@ -1,0 +1,97 @@
+# =========================
+# CONFIG CHO MODULE VISION
+# =========================
+
+# --- CẤU HÌNH CAMERA ---
+camera:
+  # Index của webcam trong hệ thống (0, 1, 2,...)
+  index: 0
+
+  # Độ phân giải mong muốn
+  width: 640
+  height: 480
+
+  # FPS mục tiêu (camera thực tế có thể không đúng y chang)
+  fps: 30
+
+
+# --- CẤU HÌNH MODEL YOLO ---
+model:
+  # Đường dẫn tới file weight YOLO (tương đối so với thư mục camera2d_pipeline)
+  weights_path: "yolo11n.pt"
+
+  # Ngưỡng confidence để nhận detection
+  conf_threshold: 0.5
+
+  # Ngưỡng IoU dùng cho NMS (nếu cần)
+  iou_threshold: 0.45
+
+  # "cpu" hoặc "cuda" (nếu máy bạn có GPU và đã cài torch GPU)
+  device: "cpu"
+
+
+# --- CẤU HÌNH LOGIC NHẬN DIỆN KHÁCH & AN TOÀN ---
+logic:
+  # Thời gian (giây) người đứng trong CUSTOMER_ZONE để tính là khách
+  customer_dwell_time: 3.0
+
+  # Ngưỡng tốc độ (pixel/frame) để phân biệt đứng yên vs di chuyển
+  speed_threshold: 5.0
+
+  # Thời gian (giây) cho phép mất track trước khi xoá người khỏi danh sách
+  max_lost_time: 1.0
+
+  # Thời gian cooldown (giây) giữa 2 cảnh báo an toàn liên tiếp cho cùng 1 người
+  safety_alert_cooldown: 2.0
+
+
+# --- CẤU HÌNH VÙNG (ZONE) TRONG ẢNH ---
+# Mỗi vùng là một polygon, biểu diễn bằng list các điểm [x, y]
+# TẠM THỜI mình điền ví dụ hình chữ nhật, sau này bạn calib rồi sửa lại.
+
+zones:
+  WORK_AREA:
+    - [100, 200]
+    - [540, 200]
+    - [540, 460]
+    - [100, 460]
+
+  CUSTOMER_ZONE:
+    - [180, 260]
+    - [500, 260]
+    - [500, 460]
+    - [180, 460]
+
+  DANGER_ZONE:
+    - [120, 220]
+    - [520, 220]
+    - [520, 380]
+    - [120, 380]
+
+
+# --- CẤU HÌNH GIAO TIẾP VỚI HỆ THỐNG TRUNG TÂM ---
+comms:
+  # Nếu chưa có server thật, bạn có thể tạm để enabled: false để khỏi báo lỗi kết nối
+  # enabled: true
+  enabled: false
+
+  host: "127.0.0.1"
+  port: 9000
+
+  # Nếu kết nối bị rớt, thời gian chờ (giây) trước khi thử connect lại
+  reconnect_seconds: 5.0
+
+
+# --- CẤU HÌNH HIỂN THỊ/DEBUG (tuỳ chọn) ---
+visualization:
+  # Có mở cửa sổ debug hiển thị frame, bbox, zone không
+  show_debug_window: true
+
+  # Có vẽ polygon vùng WORK_AREA / CUSTOMER_ZONE / DANGER_ZONE lên hình không
+  draw_zones: true
+
+  # Có vẽ bbox & ID của người không
+  draw_tracks: true
+
+  # Nếu show_debug_window = true: giới hạn FPS hiển thị cho đỡ lag
+  debug_fps: 10

@@ -1,0 +1,86 @@
+[2025-11-23 00:08:39] [INFO] [MainThread] Logging initialized. Log file: F:\work_space\mon_hoc\HRI\coffee_vision\camera2d_pipeline\logs\vision.log
+[2025-11-23 00:08:39] [INFO] [MainThread] === VISION MODULE STARTING ===
+[2025-11-23 00:08:39] [INFO] [CaptureThread] Capture loop starting. Camera index=0, resolution=640x480, target FPS=30
+[2025-11-23 00:08:39] [INFO] [MainThread] Capture thread started.
+[2025-11-23 00:08:39] [INFO] [ProcessThread] Process loop starting (logic + detector).
+[2025-11-23 00:08:39] [INFO] [MainThread] Processing thread started.
+[2025-11-23 00:08:39] [INFO] [ProcessThread] Loading YOLO model from 'F:\work_space\mon_hoc\HRI\coffee_vision\camera2d_pipeline\yolo11n.pt' (device=cpu)...
+[2025-11-23 00:08:39] [INFO] [CommsThread] Comms running in DEBUG mode (COMMS_ENABLED = False).
+[2025-11-23 00:08:39] [INFO] [MainThread] Comms thread started.
+[2025-11-23 00:08:39] [INFO] [ProcessThread] YOLO model loaded successfully.
+[2025-11-23 00:08:42] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831322.349966}
+[2025-11-23 00:08:44] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831324.3695939}
+[2025-11-23 00:08:46] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831326.3952606}
+[2025-11-23 00:08:48] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831328.4447348}
+[2025-11-23 00:08:50] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831330.4988003}
+[2025-11-23 00:08:52] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831332.500066}
+[2025-11-23 00:08:54] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831334.5327659}
+[2025-11-23 00:08:56] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831336.5744607}
+[2025-11-23 00:08:56] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'ENTER_WORK_AREA', 'track_id': 1, 'zone': 'WORK_AREA', 'timestamp': 1763831336.9476473}
+[2025-11-23 00:08:57] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'EXIT_WORK_AREA', 'track_id': 1, 'zone': 'OUTSIDE', 'timestamp': 1763831337.1715682}
+[2025-11-23 00:09:01] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'ENTER_WORK_AREA', 'track_id': 1, 'zone': 'WORK_AREA', 'timestamp': 1763831341.104241}
+[2025-11-23 00:09:01] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'EXIT_WORK_AREA', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831341.25797}
+[2025-11-23 00:09:01] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831341.25797}
+[2025-11-23 00:09:01] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 2, 'zone': 'DANGER_ZONE', 'timestamp': 1763831341.25797}
+[2025-11-23 00:09:03] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831343.2872045}
+[2025-11-23 00:09:05] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831345.323719}
+[2025-11-23 00:09:05] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 3, 'zone': 'DANGER_ZONE', 'timestamp': 1763831345.442346}
+[2025-11-23 00:09:07] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831347.3764462}
+[2025-11-23 00:09:09] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831349.3783538}
+[2025-11-23 00:09:11] [INFO] [CommsThread] [COMMS DEBUG] EVENT OUT -> {'event': 'SAFETY_ALERT', 'track_id': 1, 'zone': 'DANGER_ZONE', 'timestamp': 1763831351.4086177}
+[2025-11-23 00:09:12] [INFO] [MainThread] Ctrl+C detected. Stopping vision module...
+[2025-11-23 00:09:12] [INFO] [ProcessThread] Process loop stopped.
+[2025-11-23 00:09:12] [INFO] [CaptureThread] Capture loop stopped. Camera released.
+[2025-12-11 12:20:37] [INFO] [MainThread] Logging initialized. Log file: C:\Users\ADMIN\Downloads\New folder\coffee_vision\camera2d_pipeline\logs\vision.log
+[2025-12-11 12:20:37] [INFO] [MainThread] === VISION MODULE STARTING ===
+[2025-12-11 12:20:37] [INFO] [CaptureThread] Capture loop starting. Camera index=0, resolution=640x480, target FPS=30
+[2025-12-11 12:20:37] [INFO] [MainThread] Capture thread started.
+[2025-12-11 12:20:37] [INFO] [ProcessThread] Process loop starting (logic + detector).
+[2025-12-11 12:20:37] [INFO] [MainThread] Processing thread started.
+[2025-12-11 12:20:37] [INFO] [ProcessThread] Loading YOLO model from 'C:\Users\ADMIN\Downloads\New folder\coffee_vision\camera2d_pipeline\yolo11n.pt' (device=cpu)...
+[2025-12-11 12:20:37] [INFO] [CommsThread] Comms running in DEBUG mode (COMMS_ENABLED = False).
+[2025-12-11 12:20:37] [INFO] [MainThread] Comms thread started.
+[2025-12-11 12:20:37] [INFO] [ProcessThread] YOLO model loaded successfully.
+[2025-12-11 12:21:17] [INFO] [MainThread] Ctrl+C detected. Stopping vision module...
+[2025-12-11 12:21:17] [INFO] [ProcessThread] Process loop stopped.
+[2025-12-11 12:21:18] [INFO] [CaptureThread] Capture loop stopped. Camera released.
+[2025-12-13 08:27:36] [INFO] [MainThread] Logging initialized. Log file: C:\Users\ADMIN\Downloads\New folder\coffee_vision\camera2d_pipeline\logs\vision.log
+[2025-12-13 08:27:36] [INFO] [MainThread] === VISION MODULE STARTING ===
+[2025-12-13 08:27:36] [INFO] [CaptureThread] Capture loop starting. Camera index=0, resolution=640x480, target FPS=30
+[2025-12-13 08:27:36] [INFO] [MainThread] Capture thread started.
+[2025-12-13 08:27:36] [INFO] [ProcessThread] Process loop starting (logic + detector).
+[2025-12-13 08:27:36] [INFO] [MainThread] Processing thread started.
+[2025-12-13 08:27:36] [INFO] [ProcessThread] Loading YOLO model from 'C:\Users\ADMIN\Downloads\New folder\coffee_vision\camera2d_pipeline\yolo11n.pt' (device=cpu)...
+[2025-12-13 08:27:36] [INFO] [CommsThread] Comms running in DEBUG mode (COMMS_ENABLED = False).
+[2025-12-13 08:27:36] [INFO] [MainThread] Comms thread started.
+[2025-12-13 08:27:36] [INFO] [ProcessThread] YOLO model loaded successfully.
+[2025-12-13 08:27:55] [INFO] [MainThread] Ctrl+C detected. Stopping vision module...
+[2025-12-13 08:27:55] [INFO] [CaptureThread] Capture loop stopped. Camera released.
+[2025-12-13 08:27:55] [INFO] [ProcessThread] Process loop stopped.
+[2025-12-13 08:27:55] [INFO] [MainThread] === VISION MODULE STOPPED ===
+[2025-12-15 16:03:17] [INFO] [MainThread] Logging initialized. Log file: C:\Users\ADMIN\Downloads\New folder\coffee_vision\camera2d_pipeline\logs\vision.log
+[2025-12-15 16:03:17] [INFO] [MainThread] === VISION MODULE STARTING ===
+[2025-12-15 16:03:17] [INFO] [CaptureThread] Capture loop starting. Camera index=0, resolution=640x480, target FPS=30
+[2025-12-15 16:03:17] [INFO] [MainThread] Capture thread started.
+[2025-12-15 16:03:17] [INFO] [ProcessThread] Process loop starting (logic + detector).
+[2025-12-15 16:03:17] [INFO] [MainThread] Processing thread started.
+[2025-12-15 16:03:17] [INFO] [ProcessThread] Loading YOLO model from 'C:\Users\ADMIN\Downloads\New folder\coffee_vision\camera2d_pipeline\yolo11n.pt' (device=cpu)...
+[2025-12-15 16:03:17] [INFO] [CommsThread] Comms running in DEBUG mode (COMMS_ENABLED = False).
+[2025-12-15 16:03:17] [INFO] [MainThread] Comms thread started.
+[2025-12-15 16:03:18] [INFO] [ProcessThread] YOLO model loaded successfully.
+[2025-12-15 16:03:43] [INFO] [MainThread] Ctrl+C detected. Stopping vision module...
+[2025-12-15 16:03:44] [INFO] [CaptureThread] Capture loop stopped. Camera released.
+[2025-12-15 16:08:29] [INFO] [MainThread] Logging initialized. Log file: C:\Users\ADMIN\Downloads\New folder\coffee_vision\camera2d_pipeline\logs\vision.log
+[2025-12-15 16:08:29] [INFO] [MainThread] === VISION MODULE STARTING ===
+[2025-12-15 16:08:29] [INFO] [CaptureThread] Capture loop starting. Camera index=0, resolution=640x480, target FPS=30
+[2025-12-15 16:08:29] [INFO] [MainThread] Capture thread started.
+[2025-12-15 16:08:29] [INFO] [ProcessThread] Process loop starting (logic + detector).
+[2025-12-15 16:08:29] [INFO] [MainThread] Processing thread started.
+[2025-12-15 16:08:29] [INFO] [ProcessThread] Loading YOLO model from 'C:\Users\ADMIN\Downloads\New folder\coffee_vision\camera2d_pipeline\yolo11n.pt' (device=cpu)...
+[2025-12-15 16:08:29] [INFO] [CommsThread] Comms running in DEBUG mode (COMMS_ENABLED = False).
+[2025-12-15 16:08:29] [INFO] [MainThread] Comms thread started.
+[2025-12-15 16:08:29] [INFO] [ProcessThread] YOLO model loaded successfully.
+[2025-12-15 16:08:51] [INFO] [MainThread] Ctrl+C detected. Stopping vision module...
+[2025-12-15 16:08:52] [INFO] [CaptureThread] Capture loop stopped. Camera released.
+[2025-12-15 16:08:52] [INFO] [ProcessThread] Process loop stopped.
+[2025-12-15 16:08:52] [INFO] [MainThread] === VISION MODULE STOPPED ===
